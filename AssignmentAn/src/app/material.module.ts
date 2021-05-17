@@ -5,6 +5,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSelectModule} from '@angular/material/select';
 import { PaginationModule } from "ngx-bootstrap/pagination";
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -15,7 +16,8 @@ import { PaginationModule } from "ngx-bootstrap/pagination";
     MatCardModule,
     MatPaginatorModule,
     MatSelectModule,
-    PaginationModule
+    PaginationModule,
+    MatChipsModule
 
 
   ],
@@ -25,7 +27,8 @@ import { PaginationModule } from "ngx-bootstrap/pagination";
     MatCardModule,
     MatPaginatorModule,
     MatSelectModule,
-    PaginationModule
+    PaginationModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule { }
