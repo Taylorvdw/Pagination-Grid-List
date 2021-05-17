@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Angular\\MNR\\API\\API.csproj": {}
+    "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Angular\\MNR\\API\\API.csproj": {
+    "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular\\MNR\\API\\API.csproj",
+        "projectUniqueName": "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Angular\\MNR\\API\\API.csproj",
+        "projectPath": "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\API.csproj",
         "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular\\MNR\\API\\obj\\",
+        "outputPath": "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

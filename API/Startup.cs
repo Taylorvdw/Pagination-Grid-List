@@ -26,7 +26,6 @@ namespace API
         {
             services.AddDbContext<ApplicationDbContext>(o => 
                 o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddControllers();

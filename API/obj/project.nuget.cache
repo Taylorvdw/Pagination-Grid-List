@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HWPCQ2ufWe0pcYvI7QiEX6a9XzYheVLnm0yWPETqCMBiFN3R0saLRtzddD95ngmQnj9hbWT719MF6UHNqlsjgg==",
+  "dgSpecHash": "z5cHv+TxJoKVibWypKXO2ctcMr4jLPBggf+Q3btlEF0ZMy6lfVO8V2+gYnc1lmZLnk26ktJkvTDM+7+aoyT0Wg==",
   "success": true,
-  "projectFilePath": "D:\\Angular\\MNR\\API\\API.csproj",
+  "projectFilePath": "D:\\Angular\\MNR\\Pagination-Grid-List\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taylo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\taylo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
