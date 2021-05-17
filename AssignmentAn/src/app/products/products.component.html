@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+
+    <section class="col-3">
+      <mat-form-field appearance="fill">
+        <mat-label>Sort</mat-label>
+        <mat-select (selectionChange)="onSortSelected(selectedsort)" [(value)]= "selectedsort">
+          <mat-option>--</mat-option>
+          <mat-option *ngFor="let sort of sortOptions"
+          [value]="sort.value">
+          {{sort.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h5 class="ml-3">Types</h5>
+      <mat-selection-list #type [multiple]="false" >
+        <mat-list-option *ngFor="let type of types" [value]="type.id"
+        (click)="onTypeSelected(type.id)"
+        >
+          {{type.name}}
+        </mat-list-option>
+      </mat-selection-list>
+    </section>
+
+    <section class="col-9">
+      <div class="d-flex justify-content-between align-items-center pb-2">
+        <header>
+          <span *ngIf="totalCount && totalCount > 0">
+            Showing
+            <strong>
+              {{(this.prodParams.pageNumber - 1) * this.prodParams.pageSize +1}} -
+              {{this.prodParams.pageNumber * this.prodParams.pageSize
+                > this.totalCount
+                ? this.totalCount
+                : this.prodParams.pageNumber * this.prodParams.pageSize
+              }}
+            </strong> of <strong>{{this.totalCount}}</strong> Results</span>
+            <span *ngIf="totalCount === 0">
+              There are <strong>0</strong> results for this filter.
+            </span>
+        </header>
+      </div>
+      <mat-grid-list cols="2" rowHeight="1:1">
+           <mat-grid-tile *ngFor="let product of products">
+             <app-product [product]="product"></app-product>
+            </mat-grid-tile>
+
+      </mat-grid-list>
+      <div class="d-flex justify-content-center">
+        <pagination *ngIf="totalCount > 0"
+        [boundaryLinks]="true"
+        [totalItems]="this.totalCount"
+        (pageChanged)="onPageChanged($event)"
+        [itemsPerPage]="this.prodParams.pageSize"
+        previousText="&lsaquo;"
+        nextText="&rsaquo;"
+        firstText="&laquo;"
+        lastText="&raquo;">
+
+      </pagination>
+      </div>
+
+    </section>
+  </div>
+</div>
